@@ -14,16 +14,19 @@ How to run
 ==========
 You can use a shell oozie action like this:
 
-<shell xmlns="uri:oozie:shell-action:0.1">
-            <job-tracker>${jobTracker}</job-tracker>
-            <name-node>${nameNode}</name-node>
-            <exec>run_r_hadoop.sh</exec>
-              <argument>/user/hive/warehouse/dual</argument>
-              <argument>count.r</argument>
-              <argument>/tmp/r_test</argument>
-            <file>count.r#count.r</file>
-</shell>
-
+<pre>
+<code>
+&lt;shell xmlns="uri:oozie:shell-action:0.1"&gt;
+            &lt;job-tracker&gt;${jobTracker}&lt;/job-tracker&gt;
+            &lt;name-node&gt;${nameNode}&lt;/name-node&gt;
+            &lt;exec&gt;run_r_hadoop.sh&lt;/exec&gt;
+              &lt;argument&gt;/user/hive/warehouse/dual&lt;/argument&gt;
+              &lt;argument&gt;count.r&lt;/argument&gt;
+              &lt;argument&gt;/tmp/r_test&lt;/argument&gt;
+            &lt;file&gt;count.r#count.r&lt;/file&gt;
+&lt;/shell&gt;
+</code>
+</pre>
 
 Prequesite
 ==========
